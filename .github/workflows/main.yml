@@ -1,6 +1,8 @@
 name: Deploy to AWS Lambda
 
-on: ['push']
+on:
+  push:
+    branches: [ "main" ]
 
 permissions:
   id-token: write   # This is required for OIDC authentication
